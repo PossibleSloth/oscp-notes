@@ -126,13 +126,13 @@ ncrack
 see also hydra, medusa
 
 
-###Troubleshooting###
+### Troubleshooting
 
 Shellcode isn't working
 - Make sure you're using payload `linux/x86/shell_reverse_tcp` not `linux/x86/shell/reverse_tcp`. The latter is a staged payload that requires the multi/handler
 - Check for bad characters and include them in msfvenom with `-b '\x00\xff'` 
 
-##Privilege Escalation##
+## Privilege Escalation
 
 transfer files with nc
 ```
@@ -140,7 +140,7 @@ nc -nlvp 4444 > incoming.exe
 nc -nv 10.0.0.22 4444 < outgoing.exe
 ```
 
-###Linux###
+### Linux
 
 linux kernel vulnerabilities
 ```
